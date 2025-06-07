@@ -1,0 +1,1446 @@
+[
+  {
+    "web": [
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page API",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message API",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page MOBILE",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message MOBILE",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      }
+    ],
+    "mobile": [],
+    "api": [],
+    "summary": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    "timestamp": "2025-06-02 23:54:58"
+  },
+  {
+    "summary": {
+      "total": 0,
+      "passed": 0,
+      "failed": 0
+    },
+    "web": [],
+    "mobile": [],
+    "api": [],
+    "timestamp": "2025-06-02 23:57:36"
+  },
+  {
+    "web": [
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page API",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message API",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      }
+    ],
+    "mobile": [],
+    "api": [],
+    "summary": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "timestamp": "2025-06-03 00:00:16"
+  },
+  {
+    "summary": {
+      "total": 0,
+      "passed": 0,
+      "failed": 0
+    },
+    "web": [],
+    "mobile": [],
+    "api": [],
+    "timestamp": "2025-06-03 00:00:46"
+  },
+  {
+    "web": [
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page API",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "elapsed": "0.02s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.02s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message API",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page MOBILE",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message MOBILE",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      }
+    ],
+    "mobile": [],
+    "api": [],
+    "summary": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    "timestamp": "2025-06-03 00:01:41"
+  },
+  {
+    "summary": {
+      "total": 0,
+      "passed": 0,
+      "failed": 0
+    },
+    "web": [],
+    "mobile": [],
+    "api": [],
+    "timestamp": "2025-06-03 00:10:47"
+  },
+  {
+    "web": [
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page API",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.02s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.02s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message API",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "status": "FAIL",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "NOT RUN",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page MOBILE",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message MOBILE",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      }
+    ],
+    "mobile": [],
+    "api": [],
+    "summary": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    "timestamp": "2025-06-03 00:14:44"
+  },
+  {
+    "web": [
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page API",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.02s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.03s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message API",
+        "status": "FAIL",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "status": "FAIL",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "NOT RUN",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.01s"
+      },
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page MOBILE",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.01s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message MOBILE",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.01s"
+      },
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.01s"
+      }
+    ],
+    "mobile": [],
+    "api": [],
+    "summary": {
+      "total": 6,
+      "passed": 5,
+      "failed": 1
+    },
+    "timestamp": "2025-06-03 00:19:43"
+  },
+  {
+    "summary": {
+      "total": 0,
+      "passed": 0,
+      "failed": 0
+    },
+    "web": [],
+    "mobile": [],
+    "api": [],
+    "timestamp": "2025-06-03 00:19:57"
+  },
+  {
+    "web": [
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page API",
+        "status": "FAIL",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "status": "FAIL",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "NOT RUN",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.01s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message API",
+        "status": "FAIL",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "status": "FAIL",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "NOT RUN",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.01s"
+      },
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page API",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.01s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message API",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page API",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message API",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      }
+    ],
+    "mobile": [],
+    "api": [],
+    "summary": {
+      "total": 6,
+      "passed": 4,
+      "failed": 2
+    },
+    "timestamp": "2025-06-03 00:20:28"
+  },
+  {
+    "web": [
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page API",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.01s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message API",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      }
+    ],
+    "mobile": [],
+    "api": [],
+    "summary": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "timestamp": "2025-06-03 00:23:45"
+  },
+  {
+    "web": [
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page API",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message API",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.01s"
+      },
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page MOBILE",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message MOBILE",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.01s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Open Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Login With Credentials",
+            "args": [
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Close Browser",
+            "args": [],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      }
+    ],
+    "mobile": [],
+    "api": [],
+    "summary": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    "timestamp": "2025-06-03 00:24:50"
+  }
+]
