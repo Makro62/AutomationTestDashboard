@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>🧪 Realtime Automation Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Header -->
+      <h1 class="header">🧪 Realtime Automation Dashboard</h1>
+
+      <!-- Summary Section -->
+      <div class="summary-card">
+        <div class="summary-item">
+          <strong>Total Tests:</strong> {{ result.summary.total }}
+        </div>
+        <div class="summary-item passed-badge">
+          ✅ Passed: {{ result.summary.passed }}
+        </div>
+        <div class="summary-item failed-badge">
+          ❌ Failed: {{ result.summary.failed }}
+        </div>
+        <div class="summary-item percentage-badge">
+          {% if result.summary.total > 0 %} {{ (result.summary.passed /
+          result.summary.total * 100) | round(2) }}% {% else %} 0% {% endif %}
+        </div>
+      </div>
+
+      <!-- Category Test Case -->
+      {% for category in ['web', 'mobile', 'api'] %} {% if result[category] and
+      result[category]|length > 0 %}
+      <div class="test-suite">
+        <h2 class="suite-name">{{ category.capitalize() }} Test Suite</h2>
+        <table class="test-table">
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Test Name</th>
+              <th>Status</th>
+              <th>Elapsed Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for test in result[category] %}
+            <tr class="test-case-row">
+              <td>{{ loop.index }}</td>
+              <td>
+                <div class="test-name" onclick="toggleSteps(this)">
+                  {{ test.name }}
+                </div>
+              </td>
+              <td>
+                <span
+                  class="status-badge {{ 'passed' if test.status == 'PASS' else 'failed' }}"
+                >
+                  {{ test.status }}
+                </span>
+              </td>
+              <td>{{ test.elapsed_total }}</td>
+            </tr>
+            {% for step in test.steps %}
+            <tr class="step-row hidden">
+              <td></td>
+              <td>
+                <span class="keyword-badge">Keyword</span>
+                {{ step.name }} {% if step.args %} ({{ step.args|join(', ') }})
+                {% endif %}
+              </td>
+              <td>
+                <span
+                  class="status-badge {{ 'passed' if step.status == 'PASS' else 'failed' }}"
+                >
+                  {{ step.status }}
+                </span>
+              </td>
+              <td>{{ step.elapsed }}</td>
+            </tr>
+            {% endfor %} {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %} {% endfor %}
+
+      <!-- Execution History -->
+      <div class="history-section">
+        <h2>📜 Execution History</h2>
+        {% if history and history|length > 0 %}
+        <ul class="history-list">
+          {% for entry in history %}
+          <li>
+            <strong>{{ entry.timestamp }}</strong> → Total: {{
+            entry.summary.total }}, Passed: {{ entry.summary.passed }}, Failed:
+            {{ entry.summary.failed }}
+          </li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <p><em>No history available.</em></p>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Auto-refresh & Toggle Steps -->
+    <script>
+      // Toggle detail steps
+      function toggleSteps(element) {
+        const parentRow = element.closest(".test-case-row");
+        let next = parentRow.nextElementSibling;
+        while (next && next.classList.contains("step-row")) {
+          next.classList.toggle("hidden");
+          next = next.nextElementSibling;
+        }
+      }
+    </script>
+  </body>
+</html>
