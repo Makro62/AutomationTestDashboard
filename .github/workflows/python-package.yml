@@ -1,34 +1,52 @@
-name: Python package
+name: Run Robot Tests & Flask Dashboard
 
 on:
   push:
     branches: ["main"]
-  pull_request:
-    branches: ["main"]
+  workflow_dispatch: # Allow manual triggering
 
 jobs:
-  build:
+  run-tests-and-dashboard:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        python-version: ["3.8", "3.9", "3.10", "3.11"]
 
     steps:
-      - uses: actions/checkout@v4
-      - name: Set up Python ${{ matrix.python-version }}
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
         uses: actions/setup-python@v3
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: "3.10"
+
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install flake8 robotframework selenium webdriver-manager
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: Kill running chrome processes
+          pip install -r requirements.txt
+
+      - name: Run Robot Framework Tests
         run: |
-          pkill -f chrome || true
-          pkill -f chromedriver || true
-      - name: Test with robot
+          python3 -m robot.run --outputdir . --report report.html --log log.html Web
+
+      - name: Check if output.xml exists
         run: |
-          python3 -m robot.run --outputdir output --report report.html --log log.html Web
+          if [ ! -f output.xml ]; then
+            echo "File output.xml not found!"
+            exit 1
+          fi
+
+      - name: Save output.xml as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: robot-results
+          path: output.xml
+
+      - name: Run Flask Dashboard in Background
+        run: |
+          nohup python app.py > flask.log 2>&1 &
+          sleep 5  # wait for the server to be ready
+
+      - name: Print status
+        run: |
+          echo "Robot test completed and Flask dashboard is running."
+          echo "Access local dashboard: http://localhost:5000"
+          cat flask.log
