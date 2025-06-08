@@ -1,0 +1,4 @@
+robotframework
+selenium
+webdriver-manager
+flask
