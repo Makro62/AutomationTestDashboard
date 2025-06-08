@@ -42,12 +42,10 @@ jobs:
 
       - name: Run Flask Dashboard in Background
         run: |
-          nohup python app.py > flask.log 2>&1 &
+          nohup python dashboard/app.py > flask.log 2>&1 &
           sleep 5  # wait for the server to be ready
 
       - name: Print status
         run: |
           echo "Robot test completed and Flask dashboard is running."
           echo "Access local dashboard: http://localhost:5000"
-          cat flask.log
-
