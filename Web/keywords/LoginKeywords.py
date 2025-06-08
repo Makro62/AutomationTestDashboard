@@ -9,7 +9,9 @@ class LoginKeywords:
         self.driver = None
 
     def open_browser(self):
-        self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+        options = webdriver.ChromeOptions()
+        options.add_argument("--headless")
+        self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
         self.driver.get("https://www.saucedemo.com")
         self.driver.maximize_window()
 
@@ -28,3 +30,4 @@ class LoginKeywords:
 
     def close_browser(self):
         self.driver.quit()
+
