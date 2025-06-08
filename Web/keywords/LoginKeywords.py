@@ -3,6 +3,8 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 import time
+import tempfile
+import os
 
 class LoginKeywords:
     def __init__(self):
@@ -10,9 +12,22 @@ class LoginKeywords:
 
     def open_browser(self):
         options = webdriver.ChromeOptions()
-        options.add_argument("--headless")
-        self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-        self.driver.get("https://www.saucedemo.com")
+        
+        # Tambahkan argumen penting untuk lingkungan CI
+        options.add_argument("--headless=new")  # gunakan headless modern
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+
+        # Buat direktori user data sementara unik
+        temp_user_dir = tempfile.mkdtemp(prefix="chrome-user-data-")
+        options.add_argument(f"--user-data-dir={temp_user_dir}")
+
+        # Inisialisasi driver
+        self.driver = webdriver.Chrome(
+            service=Service(ChromeDriverManager().install()),
+            options=options
+        )
+        self.driver.get("https://www.saucedemo.com") 
         self.driver.maximize_window()
 
     def login_with_credentials(self, username, password):
@@ -29,5 +44,5 @@ class LoginKeywords:
         assert "Username and password do not match any user in this service" in error_msg
 
     def close_browser(self):
-        self.driver.quit()
-
+        if self.driver:
+            self.driver.quit()
