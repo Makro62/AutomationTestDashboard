@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install flake8 robotframework selenium
+          python -m pip install flake8 robotframework selenium webdriver_manager
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Lint with flake8
         run: |
