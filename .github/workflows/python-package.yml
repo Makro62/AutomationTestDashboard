@@ -1,4 +1,4 @@
-name: Python Package
+name: Python package
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.6", "3.7", "3.8", "3.9", "3.10", "3.11"]
+        python-version: ["3.8", "3.9", "3.10", "3.11"]
 
     steps:
       - uses: actions/checkout@v4
@@ -20,18 +20,15 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: ${{ matrix.python-version }}
-
       - name: Install dependencies
         run: |
           pip install --upgrade pip
           pip install flake8 robotframework selenium webdriver-manager
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
       - name: Kill running chrome processes
         run: |
           pkill -f chrome || true
           pkill -f chromedriver || true
-
       - name: Test with robot
         run: |
           python3 -m robot.run --outputdir output --report report.html --log log.html Web
