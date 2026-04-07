@@ -2,3 +2,4 @@ robotframework
 selenium
 webdriver-manager
 flask
+robotframework-browser
