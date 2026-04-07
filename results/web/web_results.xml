@@ -1,109 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.12.10 on linux)" generated="2026-04-07T07:32:23.298610" rpa="false" schemaversion="5">
-<suite id="s1" name="LoginWebTest" source="/workspace/tests/LoginWebTest.robot">
+<robot generator="Robot 7.4.2 (Python 3.12.10 on linux)" generated="2026-04-07T07:28:30.326359" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/workspace/Dashboard/../tests">
+<suite id="s1-s1" name="LoginWebTest" source="/workspace/Dashboard/../tests/LoginWebTest.robot">
 <kw name="Setup Test Environment" type="SETUP">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-04-07T07:32:23.522565" level="INFO">Setting up test environment</msg>
+<msg time="2026-04-07T07:28:30.525040" level="INFO">Setting up test environment</msg>
 <arg>Setting up test environment</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-04-07T07:32:23.522119" elapsed="0.000556"/>
+<status status="PASS" start="2026-04-07T07:28:30.524670" elapsed="0.000455"/>
 </kw>
 <kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2026-04-07T07:32:23.523374" level="INFO">${LOGIN_LOGGED_IN} = False</msg>
+<msg time="2026-04-07T07:28:30.536655" level="INFO">${LOGIN_LOGGED_IN} = False</msg>
 <arg>${LOGIN_LOGGED_IN}</arg>
 <arg>${False}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2026-04-07T07:32:23.522882" elapsed="0.000566"/>
+<status status="PASS" start="2026-04-07T07:28:30.525281" elapsed="0.011537"/>
 </kw>
 <kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2026-04-07T07:32:23.524414" level="INFO">${LOGIN_ERROR_MSG} = </msg>
+<msg time="2026-04-07T07:28:30.538135" level="INFO">${LOGIN_ERROR_MSG} = </msg>
 <arg>${LOGIN_ERROR_MSG}</arg>
 <arg>${EMPTY}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2026-04-07T07:32:23.523592" elapsed="0.000878"/>
+<status status="PASS" start="2026-04-07T07:28:30.537080" elapsed="0.001128"/>
 </kw>
-<status status="PASS" start="2026-04-07T07:32:23.521296" elapsed="0.003255"/>
+<status status="PASS" start="2026-04-07T07:28:30.523998" elapsed="0.014341"/>
 </kw>
-<test id="s1-t1" name="Valid Web Login Should Redirect To Inventory Page" line="63">
+<test id="s1-s1-t1" name="Valid Web Login Should Redirect To Inventory Page" line="63">
 <kw name="Simulate Login">
 <if>
 <branch type="IF" condition="$username == $VALID_USER and $password == $VALID_PASS">
 <kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2026-04-07T07:32:23.536291" level="INFO">${LOGIN_LOGGED_IN} = True</msg>
+<msg time="2026-04-07T07:28:30.540598" level="INFO">${LOGIN_LOGGED_IN} = True</msg>
 <arg>${LOGIN_LOGGED_IN}</arg>
 <arg>${True}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2026-04-07T07:32:23.526192" elapsed="0.010246"/>
+<status status="PASS" start="2026-04-07T07:28:30.540172" elapsed="0.000478"/>
 </kw>
 <kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2026-04-07T07:32:23.538679" level="INFO">${LOGIN_ERROR_MSG} = </msg>
+<msg time="2026-04-07T07:28:30.541542" level="INFO">${LOGIN_ERROR_MSG} = </msg>
 <arg>${LOGIN_ERROR_MSG}</arg>
 <arg>${EMPTY}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2026-04-07T07:32:23.537732" elapsed="0.001017"/>
+<status status="PASS" start="2026-04-07T07:28:30.540803" elapsed="0.000792"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-04-07T07:32:23.539274" level="INFO">Login successful for user: standard_user</msg>
+<msg time="2026-04-07T07:28:30.542045" level="INFO">Login successful for user: standard_user</msg>
 <arg>Login successful for user: ${username}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-04-07T07:32:23.538934" elapsed="0.000398"/>
+<status status="PASS" start="2026-04-07T07:28:30.541736" elapsed="0.000356"/>
 </kw>
-<status status="PASS" start="2026-04-07T07:32:23.525869" elapsed="0.013498"/>
+<status status="PASS" start="2026-04-07T07:28:30.539814" elapsed="0.002313"/>
 </branch>
 <branch type="ELSE">
 <kw name="Set Global Variable" owner="BuiltIn">
 <arg>${LOGIN_LOGGED_IN}</arg>
 <arg>${False}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="NOT RUN" start="2026-04-07T07:32:23.539563" elapsed="0.000020"/>
+<status status="NOT RUN" start="2026-04-07T07:28:30.542281" elapsed="0.000019"/>
 </kw>
 <kw name="Set Global Variable" owner="BuiltIn">
 <arg>${LOGIN_ERROR_MSG}</arg>
 <arg>${EXPECTED_ERROR_MSG}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="NOT RUN" start="2026-04-07T07:32:23.539682" elapsed="0.000018"/>
+<status status="NOT RUN" start="2026-04-07T07:28:30.542383" elapsed="0.000026"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
 <arg>Login failed for user: ${username}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2026-04-07T07:32:23.539802" elapsed="0.000018"/>
+<status status="NOT RUN" start="2026-04-07T07:28:30.542497" elapsed="0.000017"/>
 </kw>
-<status status="NOT RUN" start="2026-04-07T07:32:23.539429" elapsed="0.000417"/>
+<status status="NOT RUN" start="2026-04-07T07:28:30.542169" elapsed="0.000371"/>
 </branch>
-<status status="PASS" start="2026-04-07T07:32:23.525829" elapsed="0.014042"/>
+<status status="PASS" start="2026-04-07T07:28:30.539741" elapsed="0.002823"/>
 </if>
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
 <doc>Simulate login attempt with given credentials</doc>
-<status status="PASS" start="2026-04-07T07:32:23.525455" elapsed="0.014493"/>
+<status status="PASS" start="2026-04-07T07:28:30.539314" elapsed="0.003323"/>
 </kw>
 <kw name="Verify Login Success">
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
-<msg time="2026-04-07T07:32:23.540757" level="INFO">Argument types are:
+<msg time="2026-04-07T07:28:30.543398" level="INFO">Argument types are:
 &lt;class 'bool'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${LOGIN_LOGGED_IN}</arg>
 <arg>True</arg>
 <arg>msg=Login should be successful</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2026-04-07T07:32:23.540356" elapsed="0.000497"/>
+<status status="PASS" start="2026-04-07T07:28:30.543055" elapsed="0.000418"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-04-07T07:32:23.541179" level="INFO">Successfully verified login - redirected to inventory page</msg>
+<msg time="2026-04-07T07:28:30.543824" level="INFO">Successfully verified login - redirected to inventory page</msg>
 <arg>Successfully verified login - redirected to inventory page</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-04-07T07:32:23.540965" elapsed="0.000255"/>
+<status status="PASS" start="2026-04-07T07:28:30.543582" elapsed="0.000293"/>
 </kw>
 <doc>Verify that login was successful</doc>
-<status status="PASS" start="2026-04-07T07:32:23.540122" elapsed="0.001152"/>
+<status status="PASS" start="2026-04-07T07:28:30.542824" elapsed="0.001108"/>
 </kw>
 <doc>Test login dengan akun valid</doc>
 <tag>login</tag>
 <tag>positive</tag>
 <tag>smoke</tag>
-<status status="PASS" start="2026-04-07T07:32:23.524649" elapsed="0.031139"/>
+<status status="PASS" start="2026-04-07T07:28:30.538478" elapsed="0.005574"/>
 </test>
-<test id="s1-t2" name="Invalid Web Login Should Show Error Message" line="69">
+<test id="s1-s1-t2" name="Invalid Web Login Should Show Error Message" line="69">
 <kw name="Simulate Login">
 <if>
 <branch type="IF" condition="$username == $VALID_USER and $password == $VALID_PASS">
@@ -111,104 +112,106 @@
 <arg>${LOGIN_LOGGED_IN}</arg>
 <arg>${True}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="NOT RUN" start="2026-04-07T07:32:23.558280" elapsed="0.000026"/>
+<status status="NOT RUN" start="2026-04-07T07:28:30.556245" elapsed="0.000051"/>
 </kw>
 <kw name="Set Global Variable" owner="BuiltIn">
 <arg>${LOGIN_ERROR_MSG}</arg>
 <arg>${EMPTY}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="NOT RUN" start="2026-04-07T07:32:23.558456" elapsed="0.000021"/>
+<status status="NOT RUN" start="2026-04-07T07:28:30.556448" elapsed="0.000020"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
 <arg>Login successful for user: ${username}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2026-04-07T07:32:23.558580" elapsed="0.000016"/>
+<status status="NOT RUN" start="2026-04-07T07:28:30.556569" elapsed="0.000020"/>
 </kw>
-<status status="NOT RUN" start="2026-04-07T07:32:23.557968" elapsed="0.000658"/>
+<status status="NOT RUN" start="2026-04-07T07:28:30.545272" elapsed="0.011439"/>
 </branch>
 <branch type="ELSE">
 <kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2026-04-07T07:32:23.559220" level="INFO">${LOGIN_LOGGED_IN} = False</msg>
+<msg time="2026-04-07T07:28:30.557479" level="INFO">${LOGIN_LOGGED_IN} = False</msg>
 <arg>${LOGIN_LOGGED_IN}</arg>
 <arg>${False}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2026-04-07T07:32:23.558760" elapsed="0.000510"/>
+<status status="PASS" start="2026-04-07T07:28:30.556897" elapsed="0.000656"/>
 </kw>
 <kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2026-04-07T07:32:23.559735" level="INFO">${LOGIN_ERROR_MSG} = Username and password do not match any user in this service</msg>
+<msg time="2026-04-07T07:28:30.558370" level="INFO">${LOGIN_ERROR_MSG} = Username and password do not match any user in this service</msg>
 <arg>${LOGIN_ERROR_MSG}</arg>
 <arg>${EXPECTED_ERROR_MSG}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2026-04-07T07:32:23.559377" elapsed="0.000404"/>
+<status status="PASS" start="2026-04-07T07:28:30.557753" elapsed="0.000743"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-04-07T07:32:23.560187" level="INFO">Login failed for user: invalid_user</msg>
+<msg time="2026-04-07T07:28:30.558994" level="INFO">Login failed for user: invalid_user</msg>
 <arg>Login failed for user: ${username}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-04-07T07:32:23.559917" elapsed="0.000314"/>
+<status status="PASS" start="2026-04-07T07:28:30.558673" elapsed="0.000371"/>
 </kw>
-<status status="PASS" start="2026-04-07T07:32:23.558668" elapsed="0.001596"/>
+<status status="PASS" start="2026-04-07T07:28:30.556753" elapsed="0.002326"/>
 </branch>
-<status status="PASS" start="2026-04-07T07:32:23.557935" elapsed="0.002356"/>
+<status status="PASS" start="2026-04-07T07:28:30.545248" elapsed="0.013859"/>
 </if>
 <arg>${INVALID_USER}</arg>
 <arg>${INVALID_PASS}</arg>
 <doc>Simulate login attempt with given credentials</doc>
-<status status="PASS" start="2026-04-07T07:32:23.557540" elapsed="0.002813"/>
+<status status="PASS" start="2026-04-07T07:28:30.544975" elapsed="0.014198"/>
 </kw>
 <kw name="Verify Login Failed">
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
-<msg time="2026-04-07T07:32:23.561324" level="INFO">Argument types are:
+<msg time="2026-04-07T07:28:30.560194" level="INFO">Argument types are:
 &lt;class 'bool'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${LOGIN_LOGGED_IN}</arg>
 <arg>False</arg>
 <arg>msg=Login should fail</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2026-04-07T07:32:23.560976" elapsed="0.000428"/>
+<status status="PASS" start="2026-04-07T07:28:30.559621" elapsed="0.000645"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${LOGIN_ERROR_MSG}</arg>
 <arg>${EXPECTED_ERROR_MSG}</arg>
 <arg>msg=Error message should match</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2026-04-07T07:32:23.561508" elapsed="0.000376"/>
+<status status="PASS" start="2026-04-07T07:28:30.560372" elapsed="0.000378"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-04-07T07:32:23.562256" level="INFO">Successfully verified login failure with error: Username and password do not match any user in this service</msg>
+<msg time="2026-04-07T07:28:30.561221" level="INFO">Successfully verified login failure with error: Username and password do not match any user in this service</msg>
 <arg>Successfully verified login failure with error: ${LOGIN_ERROR_MSG}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-04-07T07:32:23.562012" elapsed="0.000368"/>
+<status status="PASS" start="2026-04-07T07:28:30.560957" elapsed="0.000310"/>
 </kw>
 <doc>Verify that login failed with proper error message</doc>
-<status status="PASS" start="2026-04-07T07:32:23.560711" elapsed="0.001743"/>
+<status status="PASS" start="2026-04-07T07:28:30.559343" elapsed="0.001983"/>
 </kw>
 <doc>Test login dengan akun invalid</doc>
 <tag>login</tag>
 <tag>negative</tag>
 <tag>regression</tag>
-<status status="PASS" start="2026-04-07T07:32:23.556483" elapsed="0.006088"/>
+<status status="PASS" start="2026-04-07T07:28:30.544349" elapsed="0.017103"/>
 </test>
 <kw name="Teardown Test Environment" type="TEARDOWN">
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-04-07T07:32:23.563915" level="INFO">Tearing down test environment</msg>
+<msg time="2026-04-07T07:28:30.562537" level="INFO">Tearing down test environment</msg>
 <arg>Tearing down test environment</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-04-07T07:32:23.563420" elapsed="0.000545"/>
+<status status="PASS" start="2026-04-07T07:28:30.562311" elapsed="0.000272"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-04-07T07:32:23.564273" level="INFO">Test execution completed</msg>
+<msg time="2026-04-07T07:28:30.562897" level="INFO">Test execution completed</msg>
 <arg>Test execution completed</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-04-07T07:32:23.564078" elapsed="0.000235"/>
+<status status="PASS" start="2026-04-07T07:28:30.562690" elapsed="0.000248"/>
 </kw>
-<status status="PASS" start="2026-04-07T07:32:23.563218" elapsed="0.001149"/>
+<status status="PASS" start="2026-04-07T07:28:30.562124" elapsed="0.000870"/>
 </kw>
 <doc>Robot Framework Automation Tests for Web Login
 This test suite validates login functionality
 Note: Using mock/simulation mode due to environment constraints
 For full browser tests, ensure Chrome/Chromium is installed</doc>
-<status status="PASS" start="2026-04-07T07:32:23.301679" elapsed="0.274133"/>
+<status status="PASS" start="2026-04-07T07:28:30.436959" elapsed="0.126063"/>
+</suite>
+<status status="PASS" start="2026-04-07T07:28:30.338032" elapsed="0.225889"/>
 </suite>
 <statistics>
 <total>
@@ -222,7 +225,8 @@ For full browser tests, ensure Chrome/Chromium is installed</doc>
 <stat pass="1" fail="0" skip="0">smoke</stat>
 </tag>
 <suite>
-<stat name="LoginWebTest" id="s1" pass="2" fail="0" skip="0">LoginWebTest</stat>
+<stat name="Tests" id="s1" pass="2" fail="0" skip="0">Tests</stat>
+<stat name="LoginWebTest" id="s1-s1" pass="2" fail="0" skip="0">Tests.LoginWebTest</stat>
 </suite>
 </statistics>
 <errors>
