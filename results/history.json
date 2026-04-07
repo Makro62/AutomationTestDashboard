@@ -1,0 +1,241 @@
+[
+  {
+    "web": [
+      {
+        "name": "Valid Web Login Should Redirect To Inventory Page",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Simulate Login",
+            "args": [
+              "${LOGIN_LOGGED_IN}",
+              "${True}",
+              "${LOGIN_ERROR_MSG}",
+              "${EMPTY}",
+              "Login successful for user: ${username}",
+              "${LOGIN_LOGGED_IN}",
+              "${False}",
+              "${LOGIN_ERROR_MSG}",
+              "${EXPECTED_ERROR_MSG}",
+              "Login failed for user: ${username}",
+              "${VALID_USER}",
+              "${VALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Set Global Variable",
+            "args": [
+              "${LOGIN_LOGGED_IN}",
+              "${True}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Set Global Variable",
+            "args": [
+              "${LOGIN_ERROR_MSG}",
+              "${EMPTY}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Log",
+            "args": [
+              "Login successful for user: ${username}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Set Global Variable",
+            "args": [
+              "${LOGIN_LOGGED_IN}",
+              "${False}"
+            ],
+            "status": "NOT RUN",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Set Global Variable",
+            "args": [
+              "${LOGIN_ERROR_MSG}",
+              "${EXPECTED_ERROR_MSG}"
+            ],
+            "status": "NOT RUN",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Log",
+            "args": [
+              "Login failed for user: ${username}"
+            ],
+            "status": "NOT RUN",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Success",
+            "args": [
+              "${LOGIN_LOGGED_IN}",
+              "True",
+              "msg=Login should be successful",
+              "Successfully verified login - redirected to inventory page"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Should Be Equal As Strings",
+            "args": [
+              "${LOGIN_LOGGED_IN}",
+              "True",
+              "msg=Login should be successful"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Log",
+            "args": [
+              "Successfully verified login - redirected to inventory page"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      },
+      {
+        "name": "Invalid Web Login Should Show Error Message",
+        "status": "PASS",
+        "steps": [
+          {
+            "name": "Simulate Login",
+            "args": [
+              "${LOGIN_LOGGED_IN}",
+              "${True}",
+              "${LOGIN_ERROR_MSG}",
+              "${EMPTY}",
+              "Login successful for user: ${username}",
+              "${LOGIN_LOGGED_IN}",
+              "${False}",
+              "${LOGIN_ERROR_MSG}",
+              "${EXPECTED_ERROR_MSG}",
+              "Login failed for user: ${username}",
+              "${INVALID_USER}",
+              "${INVALID_PASS}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Set Global Variable",
+            "args": [
+              "${LOGIN_LOGGED_IN}",
+              "${True}"
+            ],
+            "status": "NOT RUN",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Set Global Variable",
+            "args": [
+              "${LOGIN_ERROR_MSG}",
+              "${EMPTY}"
+            ],
+            "status": "NOT RUN",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Log",
+            "args": [
+              "Login successful for user: ${username}"
+            ],
+            "status": "NOT RUN",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Set Global Variable",
+            "args": [
+              "${LOGIN_LOGGED_IN}",
+              "${False}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Set Global Variable",
+            "args": [
+              "${LOGIN_ERROR_MSG}",
+              "${EXPECTED_ERROR_MSG}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Log",
+            "args": [
+              "Login failed for user: ${username}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Verify Login Failed",
+            "args": [
+              "${LOGIN_LOGGED_IN}",
+              "False",
+              "msg=Login should fail",
+              "${LOGIN_ERROR_MSG}",
+              "${EXPECTED_ERROR_MSG}",
+              "msg=Error message should match",
+              "Successfully verified login failure with error: ${LOGIN_ERROR_MSG}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Should Be Equal As Strings",
+            "args": [
+              "${LOGIN_LOGGED_IN}",
+              "False",
+              "msg=Login should fail"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Should Be Equal As Strings",
+            "args": [
+              "${LOGIN_ERROR_MSG}",
+              "${EXPECTED_ERROR_MSG}",
+              "msg=Error message should match"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          },
+          {
+            "name": "Log",
+            "args": [
+              "Successfully verified login failure with error: ${LOGIN_ERROR_MSG}"
+            ],
+            "status": "PASS",
+            "elapsed": "0.0s"
+          }
+        ],
+        "elapsed_total": "0.0s"
+      }
+    ],
+    "mobile": [],
+    "api": [],
+    "summary": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "timestamp": "2026-04-07 07:27:32"
+  }
+]

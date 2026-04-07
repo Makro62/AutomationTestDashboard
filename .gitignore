@@ -1,32 +1,48 @@
 ```
-# Dependencies
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.Python
+
+# Results and logs
+results/
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Dependencies
 venv/
 .venv/
-env/
-ENV/
-pip-log.txt
-pip-delete-this-directory.txt
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
+lib/python*/site-packages/
+node_modules/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Logs
 *.log
-*.pot
-*.pyc
-*.pyo
-*.pyd
-.MF
-tags
-TAGS
-.IDE/
+
+# Coverage
+.coverage
+htmlcov/
+coverage/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
 .DS_Store
 Thumbs.db
+
+# Testing
+.pytest_cache/
+.mypy_cache/
 ```
